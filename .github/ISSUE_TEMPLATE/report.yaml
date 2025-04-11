@@ -54,13 +54,13 @@ body:
     validations:
       required: false
 
-  - type: input
-    id: version-plugin
+  - type: textarea
+    id: environment
     attributes:
-      label: nf-co2footprint plugin version
+      label: In what computing environment did the problem occur?
       description: |
         <details>
-        <summary>How to get the plugin version:</summary>
+        <summary>How to get the <code>nf-co2footprint</code> plugin version:</summary>
         <ul>
           <li>Option 1: 
             <ul>
@@ -78,16 +78,6 @@ body:
           </li>
         </ul>
         </details>
-      placeholder:
-        1.0.0-beta
-    validations:
-      required: false
-
-  - type: input
-    id: version-nextflow
-    attributes:
-      label: Nextflow version
-      description: |
         <details>
         <summary>How to get the Nextflow version:</summary>
         <ul>
@@ -100,16 +90,6 @@ body:
           </li>
         </ul>
         </details>
-      placeholder:
-        25.8.0-edge
-    validations:
-      required: false
-
-  - type: input
-    id: version-java
-    attributes:
-      label: Java version
-      description: |
         <details>
         <summary>How to get the Java version:</summary>
         <ul>
@@ -122,16 +102,6 @@ body:
           </li>
         </ul>
         </details>
-      placeholder:
-        openjdk 17.0.14
-    validations:
-      required: false
-
-  - type: input
-    id: version-groovy
-    attributes:
-      label: Groovy version
-      description: |
         <details>
         <summary>How to get the Groovy version:</summary>
         <ul>
@@ -144,16 +114,6 @@ body:
           </li>
         </ul>
         </details>
-      placeholder:
-        "4.0.25 JVM: 17.0.11"
-    validations:
-      required: false
-
-  - type: input
-    id: version-shell
-    attributes:
-      label: Shell version
-      description: |
         <details>
         <summary>How to get the Shell version:</summary>
         <ul>
@@ -166,16 +126,6 @@ body:
           </li>
         </ul>
         </details>
-      placeholder:
-        "zsh 5.9"
-    validations:
-      required: false
-
-  - type: input
-    id: version-os
-    attributes:
-      label: Operating system(OS) version
-      description: |
         <details>
         <summary>How to get the OS version:</summary>
         <ul>
@@ -184,7 +134,19 @@ body:
           </li>
         </ul>
         </details>
-      placeholder:
-        "OS: 64bit macOS, Kernel: x86_64 Darwin 24.4.0"
+      placeholder: |
+        - Plugin version: 1.0.0-beta
+        - Nextflow version: 25.8.0-edge
+        - Java version: openjdk 17.0.14
+        - Groovy version: 4.0.25 JVM: 17.0.11
+        - Shell version: zsh 5.9
+        - Operating system (OS) version: 64bit macOS, Kernel: x86_64 Darwin 24.4.0
+      value: |
+        - Plugin version:
+        - Nextflow version:
+        - Java version:
+        - Groovy version:
+        - Shell version:
+        - Operating system (OS) version:
     validations:
       required: false
