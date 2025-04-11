@@ -61,10 +61,10 @@ body:
       description: |
         How to get the plugin version:
         - Option 1:
-        Report the version behind the `@` in following command. 
-        ```bash
-        nextflow config | grep nf-co2footprint
-        ```
+        - Report the version behind the `@` in following command. 
+          ```bash
+          nextflow config | grep nf-co2footprint
+          ```
         - Option 2: Run a small pipeline to get the version that is downloaded with no further specification.
           - `nextflow run nextflow-io/hello -plugins nf-co2footprint | grep nf-co2footprint`
       placeholder:
