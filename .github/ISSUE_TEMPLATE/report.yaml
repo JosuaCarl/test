@@ -69,11 +69,14 @@ body:
               </li>
             </ul>
           </li>
+          <li>Option 2:
+            <ul>
+              <li>Run a small pipeline to get the version that is downloaded with no further specification.
+              <code>nextflow run nextflow-io/hello -plugins nf-co2footprint | grep nf-co2footprint</code>
+              </li>
+            </ul>
+          </li>
         </ul>
-          * Option 2: Run a small pipeline to get the version that is downloaded with no further specification.
-            * ```bash
-              nextflow run nextflow-io/hello -plugins nf-co2footprint | grep nf-co2footprint
-              ```
         </details>
       placeholder: |
         1.0.0-beta
