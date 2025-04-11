@@ -59,7 +59,7 @@ body:
   - type: input
     id: version-plugin
     attributes:
-      label: `nf-co2footprint` plugin version
+      label: nf-co2footprint plugin version
       description: |
         <details>
         <summary>How to get the plugin version</summary>
