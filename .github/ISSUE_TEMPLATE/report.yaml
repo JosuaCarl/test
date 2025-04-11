@@ -17,7 +17,7 @@ body:
       placeholder: |
         My effort to fetch some bananas did give me fruits that I could not eat.
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: happening
@@ -26,9 +26,9 @@ body:
       description:
         Describe what happened. You may include error messages here.
       placeholder: |
-        When I tried to run `fetch banana --amount 3`, I notices that the **bananas** I got were still very much green (see *image_1.png*), indicating that they should not be eaten.
+        When I tried to run `fetch banana --amount 3`, I noticed that the **bananas** I got were still very much green (see *image_1.png*), indicating that they should not be eaten.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: expectation
@@ -60,79 +60,82 @@ body:
       label: In what computing environment did the problem occur?
       description: |
         <details>
-        <summary>How to get the <code>nf-co2footprint</code> plugin version:</summary>
-        <ul>
-          <li>Option 1: 
-            <ul>
-              <li>Report the version behind the `@` in following command:<br>
-              <code>nextflow config | grep nf-co2footprint</code>
-              </li>
-            </ul>
-          </li>
-          <li>Option 2:
-            <ul>
-              <li>Run a small pipeline to get the version that is downloaded with no further specification.<br>
-              <code>nextflow run nextflow-io/hello -plugins nf-co2footprint | grep nf-co2footprint</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        </details>
-        <details>
-        <summary>How to get the Nextflow version:</summary>
-        <ul>
-          <li>Option 1: 
-            <ul>
-              <li>Run the following script:<br>
-              <code>nextflow -version</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        </details>
-        <details>
-        <summary>How to get the Java version:</summary>
-        <ul>
-          <li>Option 1: 
-            <ul>
-              <li>Run the following script:<br>
-              <code>java --version</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        </details>
-        <details>
-        <summary>How to get the Groovy version:</summary>
-        <ul>
-          <li>Option 1: 
-            <ul>
-              <li>Run the following script:<br>
-              <code>groovy --version</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        </details>
-        <details>
-        <summary>How to get the Shell version:</summary>
-        <ul>
-          <li>Option 1: 
-            <ul>
-              <li>Run the following script:<br>
-              <code>$SHELL --version</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        </details>
-        <details>
-        <summary>How to get the OS version:</summary>
-        <ul>
-          <li>OS-specific. But chances are, that you at least know whether you sit in front of a Mac, Windows or Linux.
-              But if you want you may give us your <code>screenfetch</code> as a screenshot, if you make sure to omit personal info.
-          </li>
-        </ul>
+          <summary>Need help with that ?</summary>
+          <details>
+          <summary>How to get the <code>nf-co2footprint</code> plugin version:</summary>
+          <ul>
+            <li>Option 1: 
+              <ul>
+                <li>Report the version behind the `@` in following command:<br>
+                <code>nextflow config | grep nf-co2footprint</code>
+                </li>
+              </ul>
+            </li>
+            <li>Option 2:
+              <ul>
+                <li>Run a small pipeline to get the version that is downloaded with no further specification.<br>
+                <code>nextflow run nextflow-io/hello -plugins nf-co2footprint | grep nf-co2footprint</code>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </details>
+          <details>
+          <summary>How to get the Nextflow version:</summary>
+          <ul>
+            <li>Option 1: 
+              <ul>
+                <li>Run the following script:<br>
+                <code>nextflow -version</code>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </details>
+          <details>
+          <summary>How to get the Java version:</summary>
+          <ul>
+            <li>Option 1: 
+              <ul>
+                <li>Run the following script:<br>
+                <code>java --version</code>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </details>
+          <details>
+          <summary>How to get the Groovy version:</summary>
+          <ul>
+            <li>Option 1: 
+              <ul>
+                <li>Run the following script:<br>
+                <code>groovy --version</code>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </details>
+          <details>
+          <summary>How to get the Shell version:</summary>
+          <ul>
+            <li>Option 1: 
+              <ul>
+                <li>Run the following script:<br>
+                <code>$SHELL --version</code>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </details>
+          <details>
+          <summary>How to get the OS version:</summary>
+          <ul>
+            <li>OS-specific. But chances are, that you at least know whether you sit in front of a Mac, Windows or Linux.
+                But if you want you may give us your <code>screenfetch</code> as a screenshot, if you make sure to omit personal info.
+            </li>
+          </ul>
+          </details>
         </details>
       placeholder: |
         - Plugin version: 1.0.0-beta
