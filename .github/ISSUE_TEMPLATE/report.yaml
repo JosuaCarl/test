@@ -64,8 +64,7 @@ body:
         <ul>
           <li>Option 1: 
             <ul>
-              <li>
-              <p>Report the version behind the `@` in following command:</p>
+              <li>Report the version behind the `@` in following command:<br>
               <code>nextflow config | grep nf-co2footprint</code>
               </li>
             </ul>
