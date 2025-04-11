@@ -62,8 +62,12 @@ body:
         <details>
         <summary>How to get the plugin version:</summary>
         <ul>
-          <li>Option 1: Report the version behind the `@` in following command.
-            <code>nextflow config | grep nf-co2footprint</code>
+          <li>Option 1: 
+            <ul>
+              <li>Report the version behind the `@` in following command.
+              <code>nextflow config | grep nf-co2footprint</code>
+              </li>
+            </ul>
           </li>
         </ul>
           * Option 2: Run a small pipeline to get the version that is downloaded with no further specification.
