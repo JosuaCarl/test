@@ -3,9 +3,9 @@ description: File a report about somthing that went wrong.
 title: "[Bug]: "
 labels: ["bug", "triage"]
 type: "Bug"
-projects: []
 body:
   - type: markdown
+    id: thanks
     attributes:
       value: |
         Thank you for helping us improve. Please be direct, but polite :)
