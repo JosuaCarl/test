@@ -71,14 +71,120 @@ body:
           </li>
           <li>Option 2:
             <ul>
-              <li>Run a small pipeline to get the version that is downloaded with no further specification.
+              <li>Run a small pipeline to get the version that is downloaded with no further specification.<br>
               <code>nextflow run nextflow-io/hello -plugins nf-co2footprint | grep nf-co2footprint</code>
               </li>
             </ul>
           </li>
         </ul>
         </details>
-      placeholder: |
+      placeholder:
         1.0.0-beta
+    validations:
+      required: false
+
+  - type: input
+    id: version-nextflow
+    attributes:
+      label: Nextflow version
+      description: |
+        <details>
+        <summary>How to get the Nextflow version:</summary>
+        <ul>
+          <li>Option 1: 
+            <ul>
+              <li>Run the following script:<br>
+              <code>nextflow -version</code>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </details>
+      placeholder:
+        25.8.0-edge
+    validations:
+      required: false
+
+  - type: input
+    id: version-java
+    attributes:
+      label: Java version
+      description: |
+        <details>
+        <summary>How to get the Java version:</summary>
+        <ul>
+          <li>Option 1: 
+            <ul>
+              <li>Run the following script:<br>
+              <code>java --version</code>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </details>
+      placeholder:
+        openjdk 17.0.14
+    validations:
+      required: false
+
+  - type: input
+    id: version-groovy
+    attributes:
+      label: Groovy version
+      description: |
+        <details>
+        <summary>How to get the Groovy version:</summary>
+        <ul>
+          <li>Option 1: 
+            <ul>
+              <li>Run the following script:<br>
+              <code>groovy --version</code>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </details>
+      placeholder:
+        "4.0.25 JVM: 17.0.11"
+    validations:
+      required: false
+
+  - type: input
+    id: version-shell
+    attributes:
+      label: Shell version
+      description: |
+        <details>
+        <summary>How to get the Shell version:</summary>
+        <ul>
+          <li>Option 1: 
+            <ul>
+              <li>Run the following script:<br>
+              <code>$SHELL --version</code>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </details>
+      placeholder:
+        "zsh 5.9"
+    validations:
+      required: false
+
+  - type: input
+    id: version-os
+    attributes:
+      label: Operating system(OS) version
+      description: |
+        <details>
+        <summary>How to get the OS version:</summary>
+        <ul>
+          <li>OS-specific. But chances are, that you at least know whether you sit in front of a Mac, Windows or Linux.
+              But if you want you may give us your <code>screenfetch</code> as a screenshot, if you make sure to omit personal info.
+          </li>
+        </ul>
+        </details>
+      placeholder:
+        "OS: 64bit macOS, Kernel: x86_64 Darwin 24.4.0"
     validations:
       required: false
