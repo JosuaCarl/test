@@ -61,9 +61,9 @@ body:
       description: |
         <details>
         <summary>How to get the plugin version:</summary>
-        ```bash
-        nextflow config | grep nf-co2footprint
-        ```
+          ```bash
+          nextflow config | grep nf-co2footprint
+          ```
         </details>
       placeholder: |
         1.0.0-beta
