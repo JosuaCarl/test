@@ -1,0 +1,18 @@
+name: Question
+description: Ask a question that needs answering. Just make sure you dont [LUDDGTFY](https://lmddgtfy.net/?q=What%20was%20the%20question%20again%20%3F).
+title: "[Q/A]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask away. Please be direct, but polite :)
+
+  - type: textarea
+    id: question
+    attributes:
+      label: "My question:"
+      placeholder: |
+        Why are bananas so yummy?
+    validations:
+      required: true
