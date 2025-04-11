@@ -62,7 +62,7 @@ body:
         <details>
         <summary>How to get the plugin version:</summary>
           ```bash
-          nextflow config | grep nf-co2footprint
+            nextflow config | grep nf-co2footprint
           ```
         </details>
       placeholder: |
